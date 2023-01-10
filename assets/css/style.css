@@ -906,11 +906,12 @@ button .btn-2 {
 .wrapper {
     display: flex;
     gap: 15px;
+    justify-content: space-between;
 }
 .wrapper-item {
     display: flex;
     flex-direction: column;
-    max-width: 413px;
+    max-width: 45%;
     width: 100%;
     gap: 10px;
 }
@@ -1155,6 +1156,10 @@ button .btn-2 {
     .achievement-item { gap: 50px; }
     
     .teams-items { grid-template-columns: repeat(2, 1fr); }
+    
+
+    .wrapper { flex-wrap: wrap; }
+    .wrapper-item { max-width: 100%; }
 
 }
 
