@@ -94,11 +94,12 @@ img {
     padding-top: 100px;
 }
 
-.achieve-card-item img {
+.achieve-card-item .img-cont {
     width: 63px;
     height: 63px;
     border-radius: 50%;
     background-color: gray;
+    padding: 10px;
 }
 
 /* button-1 */
@@ -711,7 +712,6 @@ button .btn-2 {
     flex-direction: column;
     align-items: center;
     gap: 35px;
-
 }
 .aboutpage-img img {
     width: 100%;
@@ -748,7 +748,6 @@ button .btn-2 {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-
 }
 .services-content .achieve-cards .achieve-card-item {
     background: #FFFFFF;
@@ -760,6 +759,7 @@ button .btn-2 {
     align-items: center;
     text-align: center;
     gap: 20px;
+    justify-content: center;
 }
 .achieve-card-item h3 {
     font-family: 'Poppins';
@@ -794,9 +794,6 @@ button .btn-2 {
 .achievement-item img {
     max-width: 746px;
     width: 100%;
-}
-.achieve-card-item h3 {
-    text-align: left;
 }
 .achievement-item .achieve-card-item {
     display: flex;
@@ -1221,6 +1218,10 @@ button .btn-2 {
     .teams-items { grid-template-columns: repeat(1, 1fr); }
     .team-details { width: 50%; }
     .teams-item .img { background-size: contain; }
+
+
+    .about-img { padding-top: 50px; }
+    .ceo { top: -50px; }
 }
 
 @media (max-width: 450px)  {
