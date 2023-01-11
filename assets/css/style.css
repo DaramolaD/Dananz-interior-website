@@ -199,6 +199,7 @@ button .btn-2 {
     background: rgb(217, 217, 217);
     padding-block: 15px 8px;
     box-shadow: var(#333333);
+    height: 70px;
 }
 .header .container {
     display: flex;
@@ -358,6 +359,7 @@ button .btn-2 {
     position: relative;
     align-items: center;
 }
+.about-img-cont { position: relative ;}
 .about-img img {
     max-width: 883px;
     width: 100%;
@@ -382,17 +384,17 @@ button .btn-2 {
     align-items: center;
     gap: 20px;
     position: absolute;
-    top: 27px;
-    right: 20%;
+    bottom: 0px;
+    right: 0px;
     padding: 17px 20px;
     width: max-content;
+    /* height: 68px; */
 }
 .ceo-detail h3 {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
-    line-height: 140%;
     color: #000000;
 }
 .ceo-detail p {
@@ -400,7 +402,6 @@ button .btn-2 {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 160%;
     color: #9C9C9C;
 }
 .ceo img {
@@ -792,7 +793,7 @@ button .btn-2 {
     justify-content: space-between;
 }
 .achievement-item img {
-    max-width: 746px;
+    max-width: 650px;
     width: 100%;
 }
 .achievement-item .achieve-card-item {
@@ -956,12 +957,13 @@ button .btn-2 {
         font-size: 45px;
     }
     .title-para-1 { font-size: 25px; }
-    .about-img { width: 95%; margin: auto; }
+    /* .about-img { width: 95%; margin: auto; } */
     .ceo {
         bottom: 0px;
         right: 245px;
         top: initial;
     }
+    .achievement-item { gap: 60px; }
     .section-title { padding-inline: 40px; }
     .product-heading, .no { font-size: 20px; }
     .product-link .detail span { font-size: 16px; }
@@ -1012,7 +1014,7 @@ button .btn-2 {
         top: 0px;
     }
     .about-img-text p { font-size: 14px; }
-    .ceo { padding: 15px 15px; }
+    .ceo { padding: 20px 15px; }
     .ceo img { 
         width: 40px;
         height: 46px;
@@ -1029,6 +1031,7 @@ button .btn-2 {
     .navbar-list {
         gap: 30px;
     }
+    .about-img { flex-wrap: wrap; justify-content: center;}
     .footer-content { gap: 100px; }
     .footer-content .logo-details .title-para-1 { font-size: 20px; }
 }
@@ -1056,8 +1059,14 @@ button .btn-2 {
     }
     .ceo { 
         right: 0%;
-        bottom: initial;
+        bottom: 0px;
+        height: 68px;
     }
+    .ceo img {
+        width: 30px;
+        height: 30px;
+    }
+    .ceo-detail h3, .ceo-detail p { font-size: 12px; line-height: normal;}
     .material .container { padding-block-start: 0px; }
     .product-content .product-text .paras { 
         gap: 0px;
