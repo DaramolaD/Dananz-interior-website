@@ -120,20 +120,19 @@
                                         <label for="name" class="label">First name</label>
     
                                         <input type="text" name="name" id="name" placeholder="First name *" 
-                                        class="input-field">
+                                        class="input-field" required>
                                     </div>
     
                                     <div class="wrapper-item">
                                         <label for="last-name" class="label">Last Name</label>
     
                                         <input type="text" name="last-name" id="last-name" placeholder="Last Name *" 
-                                        class="input-field">
+                                        class="input-field" required>
                                     </div>
                                 </div>
     
                                 <label for="email" class="label">Email</label>
-                                <input type="text" name="email" id="email" placeholder="Email *" required class="input-field">
-    
+                                <input type="text" name="email" id="email" placeholder="Email *" class="input-field" required>
                                 <label for="phone" class="label">Phone Number</label>
                                 <input type="text" name="phone" id="phone" placeholder="Phone Number *" required class="input-field">
     
@@ -145,6 +144,10 @@
                                     <!-- <p class=" btn-1 btn btn-tertiary">Send Message</p> -->
                                     Send Message
                                 </button>
+
+                                <h3 class="warning" id="warning">
+                                    Kindly fill the above details
+                                </h3>
 
                             </div>
 

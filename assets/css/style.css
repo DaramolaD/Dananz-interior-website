@@ -928,6 +928,17 @@ button .btn-2 {
     background-color: #2C387873;
     height: 100%;
 }
+.warning {
+    color: red;
+    text-align: center;
+    padding-top: 20px;
+    display: none;
+    opacity: 1;
+}
+.warning.active {
+    display: block;
+    opacity: 1;
+}
 
 /*-----------------------------------*\
   #MEDIA
