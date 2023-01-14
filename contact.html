@@ -26,18 +26,12 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <!-- 
-       - custom font link
-    -->
-
-    <link rel="stylesheet" href="./assets/font/font.css">
-
-    <!-- 
        - preload images
     -->
     <!-- <link rel="preload" as="image" href="./assets/images/loading.svg">
     <link rel="preload" as="image" href="./assets/images/loading-circle.svg"> -->
 </head>
-<body>
+<body id="bodyCont">
 
     <!-- 
        - #PRELOADING
@@ -109,13 +103,14 @@
                 <div class="container">
 
                     <div class="aboutpage-content">
+
                         <div class="aboutpage-text">
                             <h1 class="page-title">Contact Us</h1>
                             <p class="page-para">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
 
                         </div>
 
-                        <form action="" class="form">
+                        <form action="" class="form"  id="contactForm">
 
                             <div class="form-details">
 
@@ -124,14 +119,14 @@
                                     <div class="wrapper-item">
                                         <label for="name" class="label">First name</label>
     
-                                        <input type="text" name="name" id="name" placeholder="First name *" required
+                                        <input type="text" name="name" id="name" placeholder="First name *" 
                                         class="input-field">
                                     </div>
     
                                     <div class="wrapper-item">
                                         <label for="last-name" class="label">Last Name</label>
     
-                                        <input type="text" name="last-name" id="last-name" placeholder="Last Name *" required
+                                        <input type="text" name="last-name" id="last-name" placeholder="Last Name *" 
                                         class="input-field">
                                     </div>
                                 </div>
@@ -146,8 +141,9 @@
                                 <textarea name="message" id="messsage" placeholder="Your message *" required cols="30" rows="10" 
                                 class="input-field"></textarea>
     
-                                <button class="button-1">
-                                    <a href="#" class=" btn-1 btn btn-tertiary">Send Message</a>
+                                <button type="submit" class="button-1 btn-1 btn btn-tertiary" id="submit">
+                                    <!-- <p class=" btn-1 btn btn-tertiary">Send Message</p> -->
+                                    Send Message
                                 </button>
 
                             </div>
@@ -160,6 +156,28 @@
 
 
             <!-- 
+                ALERT
+            -->
+
+            <section class="alert" id="alert">
+                <div class="container">
+
+                    <div class="alert-contact" id="alertTextCont">
+                        <h2>Thanks for getting in touch</h2>
+                        <p>We have received your message, thanks for writing to us</p>
+                        <p>If your inquiry is urgent, please use the telephone number listed below to talk to one of the staff</p>
+                        <p>Otherwise, we will reply by email, as soon as possible</p>
+                        <p>Talk to you soon</p>
+
+                        <button class="button-1 btn-1 btn btn-tertiary" id="cancel">Cancel</button>
+                    </div>
+
+                    
+                </div>
+            </section>
+
+            
+            <!-- 
                 CONTACT
             -->
 
@@ -171,7 +189,7 @@
                         </div>
                         <div class="contact-btn">
                             <p>Contact us below to work together to build your amazing interior</p>
-                            <button class="border-1"><a href="#">Contact Us</a></button>
+                            <button class="border-1" id="btn-submit"><a href="#">Contact Us</a></button>
                         </div>
                     </div>
                 </div>
@@ -225,7 +243,12 @@
         </div>
     </footer>
     
+    <section class="overlay" id="overlay"></section>
 
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/mail.js"></script>
 </body>
 </html>
