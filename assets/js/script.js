@@ -130,10 +130,6 @@ submitButton.addEventListener('click', (e) => {
     })
 
     }
-
-    
-    
-
 })
 
 

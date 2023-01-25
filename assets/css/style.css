@@ -700,7 +700,7 @@ button .btn-2 {
     line-height: 160%;
     text-align: center;
     color: #000000;
-    max-width: 582px;
+    /* max-width: 582px; */
     width: 100%;
 }
 
